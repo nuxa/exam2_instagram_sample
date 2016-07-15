@@ -1,0 +1,53 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: #f5f8fa;
+	text-align: center;
+}
+
+.posts {
+	margin: 30px auto;
+	border: solid 1px #a3c5cc;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+	.username-header {
+		height: 64px;
+		padding: 14px 20px;
+		.avatar-photo{
+			height: 30px;
+			width: 30px;
+			padding: 15px;
+			margin-right: 10px;
+			img {
+				display: block;
+				border-radius: 50%;
+			}
+		}
+		.username {
+			float: left;
+			font-size: 14px;
+			line-height: 17px;
+		}
+		span {
+			float: right;
+			font-size: 13px;
+			color: #8899a6;
+		}
+	}
+	.photo-posts {
+		padding: 90px;
+		img {
+			width: 100%
+		}
+	}
+	.content-posts {
+		text-align: left;
+		padding: 0 24px;
+		font-size: 15px;
+		line-height: 18px;
+		word-wrap: break-word;
+	}
+}
+
