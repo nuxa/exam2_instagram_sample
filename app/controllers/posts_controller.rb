@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!
   before_action :set_params, only: [:edit, :update, :destroy]
 
   def index
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
     @post = Post.new(posts_params)
     @post.save
     flash[:success] = '投稿しました！！'
-    redirect_to root_path
+    redirect_to posts_path
   end
 
   def edit
@@ -23,13 +23,13 @@ class PostsController < ApplicationController
   def update
     @post.save
     flash[:success] = '更新しました！！'
-    redirect_to root_path
+    redirect_to posts_path
   end
 
   def destroy
     @post.destroy
     flash[:success] = '削除しました！！'
-    redirect_to root_path
+    redirect_to posts_path
   end
 
   private

@@ -1,6 +1,5 @@
 <div class="container">
-    <div class="wrapper col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-        <h1>Posts#index</h1>
+    <div class="wrapper col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
         <% @posts.each do |post| %>
             <div class="posts">
                 <div class="username-header">
@@ -8,11 +7,14 @@
                     <div class="avatar-photo">
                     </div>
                     <div class="username">
+                        <strong>username</strong>
                     </div>
                 </div>
                 <div class="photo-posts">
                 </div>
                 <div class="content-posts">
+                    <strong>username</strong>
+                    <br>
                     <%= simple_format(post.content) %>
                     <span><%= link_to '編集', edit_post_path(post.id), class: 'btn-sm btn-info' %><%= link_to '削除', post_path(post.id), method: :delete, data: { confirm: '本当に削除してよろしいですか？'}, class: 'btn-sm btn-danger' %></span>
                 </div>
