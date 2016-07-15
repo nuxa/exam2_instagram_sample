@@ -1,5 +1,5 @@
 <%= form_for(@post) do |f| %>
-    <%= f.text_field :title, class: 'form-control', autofocus: true, placeholder: "タイトル" %>
-    <%= f.text_field :content, class: 'form-control', placeholder: "内容" %>
+    <p>フォトアップロード場所</p>
+    <%= f.text_area :content, class: 'form-control', placeholder: "内容" %>
     <%= f.submit '投稿', class: 'btn btn-primary' %>
 <% end %>
