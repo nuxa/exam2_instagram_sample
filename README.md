@@ -1,4 +1,4 @@
-# Achieve - DIVE06 work
+# exam2_instagram_sample - DIVE014_exam
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
