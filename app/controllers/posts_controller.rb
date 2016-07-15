@@ -21,7 +21,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.save
+    @post.update(posts_params)
     flash[:success] = '更新しました！！'
     redirect_to posts_path
   end
