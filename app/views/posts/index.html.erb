@@ -4,13 +4,15 @@
             <div class="posts">
                 <div class="username-header">
                     <span><%= post.created_at.to_s(:human) %></span>
-                    <div class="avatar-photo">
+                    <div class="post-avatar">
+                        <%= profile_img(post.user) %>
                     </div>
                     <div class="username">
                         <strong>username</strong>
                     </div>
                 </div>
                 <div class="photo-posts">
+                    <%= post_img(post) %>
                 </div>
                 <div class="content-posts">
                     <strong>username</strong>

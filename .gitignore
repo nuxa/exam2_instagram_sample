@@ -14,3 +14,4 @@
 
 # dotenv-rails
 .env
+.DS_store

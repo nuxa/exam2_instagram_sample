@@ -1,5 +1,8 @@
 <%= form_for(post) do |f| %>
-    <p>フォトアップロード場所</p>
+    <%= post_img(post) if post_img(post) %>
+    <%= f.file_field :image, class: 'btn btn-info btn-block' %>
+    <br>
+    <%= f.hidden_field :image_cache %>
     <%= f.text_area :content, size: '70x5', class: 'form-control', placeholder: "内容" %>
-    <%= f.submit '投稿', class: 'btn btn-primary' %>
+    <%= f.submit '投稿', class: 'btn btn-primary', data: { confirm: 'よろしいですか？' } %>
 <% end %>

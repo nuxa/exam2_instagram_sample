@@ -74,19 +74,18 @@ header {
 	max-width: 600px;
 	margin: 30px auto;
 	border: solid 1px #dbdbdb;
-	border-radius: 5px;
+	border-radius: 4px;
 	background-color: white;
 	.username-header {
 		height: 64px;
 		padding: 14px 20px;
 		border-bottom: solid 1px #dbdbdb;
-		.avatar-photo{
+		.post-avatar {
 			float: left;
-			height: 30px;
-			width: 30px;
-			padding: 15px;
 			margin-right: 10px;
 			img {
+				height: 30px;
+				width: 30px;
 				display: block;
 				border-radius: 50%;
 			}
@@ -98,7 +97,7 @@ header {
 		}
 	}
 	.photo-posts {
-		padding: 90px;
+		padding: 0;
 		border-bottom: solid 1px #dbdbdb;
 		img {
 			width: 100%
@@ -164,6 +163,20 @@ header {
 			opacity: 0.7;
 			background-color: #e2ffcc;
 		}
+	}
+}
+
+.field {
+	.btn {
+		display: block;
+		padding: 20px 20px;
+		text-align: center;
+	}
+}
+
+.user-avatar {
+	img {
+		width: 100%;
 	}
 }
 
