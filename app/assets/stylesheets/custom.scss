@@ -180,3 +180,67 @@ header {
 	}
 }
 
+.edit-account {
+	.btn {
+		color: gray;
+		padding: 10px 10px;
+		border: 3px solid #ccc;
+		border-radius: 3px;
+		border-style: solid;
+		border-width: 1px;
+		font-weight: 600;
+		outline: none;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		-webkit-appearance: none;
+	}
+}
+
+.user-header {
+	padding: 20px 0;
+	margin-bottom: 45px;
+	width: 100%;
+	height: 200px;
+	box-sizing: border-box;
+	.account-avatar {
+		display: block;
+		float: left;
+		margin-right: 100px;
+		margin-left: 70px;
+		img {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+		}
+	}
+	.account-username {
+		display: block;
+		float: left;
+		font-size: 34px;
+		line-height: 40px;
+	}
+	.edit-account {
+		display: block;
+		float: left;
+		clear: right;
+		margin-left: 20px;
+		.btn {
+			margin: 0;
+		}
+	}
+}
+
+.user-page {
+	.wrapper {
+		max-width: 1000px;
+	}
+	.user-images {
+		img {
+			float: left;
+			width: 275px;
+			height: 275px;
+			margin: 15px 15px;
+		}
+	}
+}

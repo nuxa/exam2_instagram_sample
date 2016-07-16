@@ -18,4 +18,4 @@
 
 # public/uploader  image files
 public/uploads/*
-
+vendor/bundle

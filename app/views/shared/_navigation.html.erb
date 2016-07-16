@@ -16,7 +16,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><%= link_to 'Photo投稿', new_post_path %></li>
                     <% if user_signed_in? %>
-                        <li><%= link_to "マイベージ", edit_user_registration_path %></li>
+                        <li><%= link_to "マイベージ", user_path(current_user.id) %></li>
                         <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
                     <% else %>
                         <li><%= link_to "ログイン", new_user_session_path %></li>

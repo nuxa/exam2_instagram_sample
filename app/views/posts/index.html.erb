@@ -8,14 +8,14 @@
                         <%= profile_img(post.user) %>
                     </div>
                     <div class="username">
-                        <strong><%= post.user.name %></strong>
+                        <strong><%= link_to "#{post.user.name}", user_path(post.user.id), style: "color:black;" %></strong>
                     </div>
                 </div>
                 <div class="photo-posts">
                     <%= post_img(post) %>
                 </div>
                 <div class="content-posts">
-                    <strong>username</strong>
+                    <strong><%= post.user.name %></strong>
                     <br>
                     <%= simple_format(post.content) %>
                     <span><%= link_to '編集', edit_post_path(post.id), class: 'btn-sm btn-info' %><%= link_to '削除', post_path(post.id), method: :delete, data: { confirm: '本当に削除してよろしいですか？'}, class: 'btn-sm btn-danger' %></span>
