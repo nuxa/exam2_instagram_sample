@@ -15,3 +15,7 @@
 # dotenv-rails
 .env
 .DS_store
+
+# public/uploader  image files
+public/uploads/*
+

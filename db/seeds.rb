@@ -8,18 +8,19 @@
 
 image_path = File.join(Rails.root, "test/fixtures/images/nicoinu.jpg")
 
-10.times do |n|
+4.times do |n|
   email = "example-#{n+1}@example.com"
   password = Faker::Internet.password(8, 8)
   name = Faker::Name.name
   user = User.new(email: email,
                   password: password,
                   password_confirmation: password,
-                  name: name)
+                  name: name,
+                  uid: SecureRandom.uuid)
   user.skip_confirmation!
   user.save
 
-  10.times do |m|
+  4.times do |m|
     Post.create!(content: Faker::Lorem.sentence,
                  user_id: user.id,
                  image: File.new(image_path))
